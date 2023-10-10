@@ -30,3 +30,14 @@ let swiper = new Swiper(".myHome", {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  // counter code 
+$(document).ready(function(){
+  $('.num').counterUp({
+    delay: 10,
+    time: 2000
+    });
+
+
+		
+})
