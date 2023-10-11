@@ -13,7 +13,7 @@ window.onscroll = ()=>{
 }
 
 // swiper js code 
-let swiper = new Swiper(".myHome", {
+var swiper = new Swiper(".myHome", {
     spaceBetween: 30,
     loop:true,
     centeredSlides: true,
@@ -41,3 +41,31 @@ $(document).ready(function(){
 
 		
 })
+
+// client section swiper code 
+var swiper = new Swiper(".myClient", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  breakpoints:{
+    640:{
+      slidesPerView:1,
+      spaceBetween:20,
+    },
+    768:{
+      slidesPerView:3,
+      spaceBetween:30,
+    },
+    1024:{
+      slidesPerView:4,
+      spaceBetween:40,
+    }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
